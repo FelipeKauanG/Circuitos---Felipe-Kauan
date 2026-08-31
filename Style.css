@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     user-select: none
+    transition: 0.5s;
 }
 @import url(Fonts/Audiowide/Audiowide-Regular.ttf);
 
@@ -20,7 +21,7 @@ body{
     background-size: 25%;
     background-blend-mode: overlay;
 }
-.card:hover, .card-body:hover{
+.card:hover{
     background-color: #0a4eb4a1;
     color: white;
 }
