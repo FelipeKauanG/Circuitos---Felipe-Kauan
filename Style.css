@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none
+}
+@import url(Fonts/Audiowide/Audiowide-Regular.ttf);
+
+header{
+    background: #060224;
+    background: linear-gradient(90deg, rgba(6, 2, 36, 1) 0%, rgba(49, 49, 61, 1) 100%);
+    padding: 10px;
+
+}
+h1{
+    padding: 20px;
+    font: 5pt 'Audiowide', sans-serif;
+}
+body{
+    background-image: url(Imagens/Header/protoboard\ 1.png);
+    background-size: 25%;
+    background-blend-mode: overlay;
+}
+.card:hover, .card-body:hover{
+    background-color: #0a4eb4a1;
+    color: white;
+}
+#pastas_galery{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    padding: 20px;
+    width: 90vw;
+    /* From https://css.glass */
+    background: linear-gradient(90deg,rgba(127, 205, 239, 0.5) 0%, rgba(14, 195, 201, 0.26) 100%);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border: 1px solid rgba(127, 235, 239, 0.48);
+}
+#menus{
+    background: #060224;
+    background: linear-gradient(90deg, rgba(6, 2, 36, 0.5) 0%, rgba(49, 49, 61, 0.48) 100%);
+    padding: 5px;
+}
+section{
+    background-color: yellow;
+    position: relative;
+}
+article{
+    background-color: blue;
+}
+aside{
+    background-color: orange;
+}
