@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LED - Botão</title>
+  <link rel="shortcut icon" href="../../Imagens/Favicon/favicon.png" sizes="512x512" type="image/x-icon">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="bg-dark text-light">
+
+  <header>
+    <h1>Protoboard digital - Felipe Kauan</h1>
+  </header>
+
+
+  <nav id="menus">
+
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#menu_gallery"
+      aria-expanded="false" aria-controls="menu_gallery">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+
+    <a class="btn btn-primary" href="../galery.html" role="button"><span
+        class="material-symbols-outlined">arrow_circle_up</span></a>
+
+
+
+
+
+
+
+    <div class="collapse" id="menu_gallery">
+      <div class="card bg-dark">
+
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+          <div class="container-fluid">
+            <div class="navbar-nav">
+              <a class="nav-link text-light active" aria-current="page" href="../../index.html">Início</a>
+              <a class="nav-link text-light" href="#">Produtos</a>
+              <a class="nav-link text-light" href="#">Tutoriais</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </nav>
+
+  <article>
+    <h1>Acionamento de LED por push button</h1>
+  </article>
+
+
+  <aside>
+
+
+    <table class="table">
+      <h2>Materiais necessários:</h2>
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Item</th>
+          <th scope="col">Quantidade</th>
+          <th scope="col">Símbolo</th>
+          <th scope="col">Imagem</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>LED</td>
+          <td>1</td>
+          <td><img class="imagem_component" src="../../Imagens/Componentes imagens/Símbolos/LED.png"
+              alt="../../Imagens/Misc/img_not_found.png"></td>
+          <td><img class="imagem_component" src="../../Imagens/Componentes imagens/Imagem/LED.png"
+              alt="../../Imagens/Misc/img_not_found.png" id="led"></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Resistor</td>
+          <td>1</td>
+          <td><img class="imagem_component" src="../../Imagens/Componentes imagens/Símbolos/resistor.png"
+              alt="../../Imagens/Misc/img_not_found.png"></td>
+          <td><img class="imagem_component" src="../../Imagens/Componentes imagens/Imagem/Resistor.png"
+              alt="../../Imagens/Misc/img_not_found.png"></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Botão</td>
+          <td>1</td>
+          <td><img class="imagem_component" src="../../Imagens/Componentes imagens/Símbolos/Push Button.png"
+              alt="../../Imagens/Misc/img_not_found.png"></td>
+          <td><img class="imagem_component" src="../../Imagens/Componentes imagens/Imagem/Botão.png"
+              alt="../../Imagens/Misc/img_not_found.png">
+              <div id="botao_acionar"></div>
+            </td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Fonte</td>
+          <td>1</td>
+          <td><img class="imagem_component" src="../../Imagens/Componentes imagens/Símbolos/Battery.png"
+              alt="../../Imagens/Misc/img_not_found.png"></td>
+          <td><img class="imagem_component" src="../../Imagens/Componentes imagens/Imagem/Fonte.png"
+              alt="../../Imagens/Misc/img_not_found.png"></td>
+        </tr>
+      </tbody>
+    </table>
+  </aside>
+</body>
+<script type="module" src="../circuitos praticos/Scripts/Aci_LED.js"></script>
+</html>
