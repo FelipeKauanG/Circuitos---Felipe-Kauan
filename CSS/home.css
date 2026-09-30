@@ -1,0 +1,192 @@
+/*PARTE PARA CELULAR*/
+.item{
+    background-color: rgb(16, 16, 64);
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+p{
+    font-size: 1vw;
+}
+article{
+    position: relative;
+    width: 90vw;
+    transform: translateX(-50%);
+    left: 50%;
+}
+aside{
+    position: relative;
+    width: 90vw;
+    transform: translateX(-50%);
+    left: 50%;
+    text-align: center;
+}
+h2{
+    position: relative;
+    font-size: 2vw;
+    text-align: center;
+}
+#menus{
+    position: relative;
+    font-size: 2vw;
+}
+.badge{
+    font-size: 3vw;
+}
+.text-body-secondary{
+    font-size: 2.8vw;
+}
+h1{
+    position: relative;
+    font-size: 2.5vw;
+}
+
+
+.item img{
+    display: flex;
+    justify-self: center;
+    border-radius: 10px;
+    width: 100%;
+}
+.table{
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    text-align: center;
+}
+.table img{
+    position: relative;
+}
+.table th{
+    font-size: 3vw;
+    padding: 1.8vw;
+    vertical-align: middle;
+}
+.table td{
+    font-size: 2lvh;
+    vertical-align: middle;
+    padding: 1.5vw;
+}
+
+.card-title{
+    font-size: 10pt;
+    color: rgb(2, 0, 35);
+}
+.card-text{
+    font-size: 8pt;
+}
+
+.item p {
+    color: white;
+    font-size: 3vw;
+}
+aside img{
+    width: 70px;
+    height: 70px;
+}
+.pasta{
+    display: flex;
+    justify-content: center;
+}
+
+
+.col{
+    display: flex;
+    font-size: 7pt;
+    justify-content: center;
+    width: 40vw;
+}
+.col img{
+    display: flex;
+    justify-self: center;
+}
+.itens_galeria{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+}
+
+
+/*PARTE INTERMEDIÁRIA*/
+
+@media (min-width: 1000px) {
+  .col{
+    display: flex;
+    font-size: 9pt;
+    justify-content: space-between;
+    width: 25vw;
+}
+.col img{
+    display: flex;
+    justify-content: center;
+
+}
+
+.table td{
+    font-size: 2.8vw;
+    vertical-align: middle;
+    padding: 2.5vw;
+}
+.itens_galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card-title{
+    font-size: 15pt;
+    color: rgb(2, 0, 35);
+}
+.card-text{
+    font-size: 12pt;
+}
+
+.badge{
+    font-size: 1.4vw;
+}
+.text-body-secondary{
+    font-size: 1.2vw;
+}
+
+}
+
+
+
+/*PARTE PARA COMPUTADOR*/
+
+@media (min-width: 1350px) {
+  .col{
+    display: flex;
+    font-size: 9pt;
+    justify-content: space-between;
+    width: 20vw;
+}
+.col img{
+    display: flex;
+    justify-content: center;
+}
+.itens_galeria{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.table td{
+    font-size: 1.8vw;
+    vertical-align: middle;
+    padding: 2.5vw;
+}
+.card-title{
+    font-size: 18pt;
+    color: rgb(2, 0, 35);
+}
+.card-text{
+    font-size: 15pt;
+}
+
+.badge{
+    font-size: 1vw;
+}
+.text-body-secondary{
+    font-size: 1vw;
+}
+}
