@@ -13,6 +13,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../CSS/home.css">
+  <link rel="stylesheet" href="../../CSS/LED-botao.css">
 
 
 </head>
@@ -25,7 +27,9 @@
 
 
   <nav id="menus">
-    <div class="collapse" id="menu_gallery">
+
+    </button>
+    <div class="collapse show " id="menu_gallery">
       <div class="card bg-dark">
 
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
@@ -65,19 +69,27 @@
           <th scope="row">1</th>
           <td>LED</td>
           <td>1</td>
-          <td><img class="imagem_component" src="../../Imagens/Componentes imagens/Símbolos/LED.png"
-              alt="../../Imagens/Misc/img_not_found.png"></td>
-          <td><img class="imagem_component" src="../../Imagens/Componentes imagens/Imagem/LED.png"
-              alt="../../Imagens/Misc/img_not_found.png" id="led"></td>
+          <td>
+            <img class="imagem_component" src="../../Imagens/Componentes imagens/Símbolos/LED.png"
+              alt="../../Imagens/Misc/img_not_found.png" draggable="false">
+          </td>
+          <td>
+            <img class="imagem_component" src="../../Imagens/Componentes imagens/Imagem/LED.png" draggable="false"
+              alt="../../Imagens/Misc/img_not_found.png" id="led">
+          </td>
         </tr>
         <tr>
           <th scope="row">2</th>
           <td>Resistor</td>
           <td>1</td>
-          <td><img class="imagem_component" src="../../Imagens/Componentes imagens/Símbolos/resistor.png"
-              alt="../../Imagens/Misc/img_not_found.png"></td>
-          <td><img class="imagem_component" src="../../Imagens/Componentes imagens/Imagem/Resistor.png"
-              alt="../../Imagens/Misc/img_not_found.png"></td>
+          <td>
+            <img class="imagem_component" src="../../Imagens/Componentes imagens/Símbolos/resistor.png"
+              alt="../../Imagens/Misc/img_not_found.png">
+          </td>
+          <td>
+            <img class="imagem_component" src="../../Imagens/Componentes imagens/Imagem/Resistor.png"
+              alt="../../Imagens/Misc/img_not_found.png">
+          </td>
         </tr>
         <tr>
           <th scope="row">3</th>
@@ -87,7 +99,7 @@
               alt="../../Imagens/Misc/img_not_found.png"></td>
           <td><img class="imagem_component" src="../../Imagens/Componentes imagens/Imagem/Botão.png"
               alt="../../Imagens/Misc/img_not_found.png">
-            </td>
+          </td>
         </tr>
         <tr>
           <th scope="row">4</th>
@@ -101,6 +113,142 @@
       </tbody>
     </table>
   </aside>
+
+
+  <article>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tutorial_led_acio"
+            aria-expanded="true" aria-controls="tutorial_led_acio">
+            <h2>Mostrar Tutorial</h2>
+          </button>
+        </h2>
+
+
+        <div id="tutorial_led_acio" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+
+            <h1>Tutorial: Acionamento de LED por push button</h1>
+
+            <h2>Nesse tutorial eu usarei o Tinkercad para criar o circuito.</h2>
+
+            <h2>Você pode acessar o site <a href="https://www.tinkercad.com/"
+                target="_blank">https://www.tinkercad.com/</a></h2>
+
+            <div class="item">
+              <p>#1</p>
+              <p>Aqui estamos no Famigerado Tinkercad.</p>
+              <picture>
+                <source media="(min-width: 768px)" srcset="Tutoriais/Acionamento_por_LED/PC/Tela1.png" sizes="">
+                <img src="Tutoriais/Acionamento_por_LED/Celular/Tela1.png" alt="" sizes="">
+              </picture>
+            </div>
+
+
+
+
+
+            <div class="item">
+              <p>#2</p>
+              <p>Nesse frame, vamos pegar um Resistor, um LED, e um botão.</p>
+              <picture>
+                <source media="(min-width: 768px)" srcset="Tutoriais/Acionamento_por_LED/PC/Tela2.png" sizes="">
+                <img src="Tutoriais/Acionamento_por_LED/Celular/Tela2.png" alt="" sizes="">
+              </picture>
+            </div>
+
+
+            <div class="item">
+              <p>#3</p>
+              <p>Vamos colocar um resistor de 270 Ohms, assim a corrente aproximada fica aproxidamente 11mA para uma
+                tensão de 5V da fonte.</p>
+              <picture>
+                <source media="(min-width: 768px)" srcset="Tutoriais/Acionamento_por_LED/PC/Tela3.png" sizes="">
+                <img src="Tutoriais/Acionamento_por_LED/Celular/Tela3.png" alt="" sizes="">
+              </picture>
+            </div>
+
+            <div class="item">
+              <p>#4</p>
+              <p>E claro, vamos pegar também a fonte de alimentação já configurada em 5V, mas não precisamos fazer nada!
+              </p>
+              <picture>
+                <source media="(min-width: 768px)" srcset="Tutoriais/Acionamento_por_LED/PC/Tela4.png" sizes="">
+                <img src="Tutoriais/Acionamento_por_LED/Celular/Tela4.png" alt="" sizes="">
+              </picture>
+            </div>
+
+
+            <div class="item">
+              <p>#5</p>
+              <p>Organizando o circuito, temos que colocar o resistor em série no ânodo do LED. No caso do Tinkercad, a
+                "Perninha" mais torta do LED, é o positivo.</p>
+              <picture>
+                <source media="(min-width: 768px)" srcset="Tutoriais/Acionamento_por_LED/PC/Tela5.png" sizes="">
+                <img src="Tutoriais/Acionamento_por_LED/Celular/Tela5.png" alt="" sizes="">
+              </picture>
+            </div>
+
+
+            <div class="item">
+              <p>#6</p>
+              <p>Conectamos todos os fios, basta clicar em cada terminal e levar até o terminal correspondente.</p>
+              <picture>
+                <source media="(min-width: 768px)" srcset="Tutoriais/Acionamento_por_LED/PC/Tela6.png" sizes="">
+                <img src="Tutoriais/Acionamento_por_LED/Celular/Tela6.png" alt="" sizes="">
+              </picture>
+            </div>
+
+
+            <div class="item">
+              <p>#7</p>
+              <p>E agora a melhor parte, simular o circuito que criamos.</p>
+              <picture>
+                <source media="(min-width: 768px)" srcset="Tutoriais/Acionamento_por_LED/PC/Tela7.png" sizes="">
+                <img src="Tutoriais/Acionamento_por_LED/Celular/Tela7.png" alt="" sizes="">
+              </picture>
+            </div>
+
+            <div class="item">
+              <p>#8</p>
+              <p>Vejamos... aparece "0.00A" no visor da fonte, porque não acionamos o botão, mas quando pressionarmos o
+                botão...</p>
+              <picture>
+                <source media="(min-width: 768px)" srcset="Tutoriais/Acionamento_por_LED/PC/Tela8.png" sizes="">
+                <img src="Tutoriais/Acionamento_por_LED/Celular/Tela8.png" alt="" sizes="">
+              </picture>
+            </div>
+
+            <div class="item">
+              <p>#9</p>
+              <p>Podemos ver o caminho que a eletricidade passa, ela segue esta linha e assim liga o LED.</p>
+              <picture>
+                <source media="(min-width: 768px)" srcset="Tutoriais/Acionamento_por_LED/PC/Tela9.png" sizes="">
+                <img src="Tutoriais/Acionamento_por_LED/Celular/Tela9.png" alt="" sizes="">
+              </picture>
+            </div>
+
+            <div class="item">
+              <p>#10</p>
+              <p>E claro com a corrente do LED em 11.1mA, uma corrente muito saudável para esse LED.</p>
+              <picture>
+                <source media="(min-width: 768px)" srcset="Tutoriais/Acionamento_por_LED/PC/Tela10.png" sizes="">
+                <img src="Tutoriais/Acionamento_por_LED/Celular/Tela10.png" alt="" sizes="">
+              </picture>
+            </div>
+
+
+            <h2>E assim terminamos o tutorial, sucesso para todos e boa sorte !</h2>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </article>
 </body>
 <script type="module" src="../../Scripts/Aci_LED.js"></script>
+
 </html>

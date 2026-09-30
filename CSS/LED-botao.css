@@ -1,0 +1,21 @@
+.item{
+    background-color: rgb(16, 16, 64);
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.item img{
+    display: flex;
+    width: 85vw;
+    justify-self: center;
+    border-radius: 10px;
+
+}
+.item p {
+    color: white;
+    font-size: 21pt;
+}
+aside img{
+    width: 90px;
+    height: 90px;
+}
