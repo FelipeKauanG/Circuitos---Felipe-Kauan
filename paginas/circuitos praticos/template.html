@@ -14,7 +14,6 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../../CSS/home.css">
-  <link rel="stylesheet" href="../../CSS/LED-botao.css">
 
 
 </head>
@@ -36,8 +35,9 @@
           <div class="container-fluid">
             <div class="navbar-nav">
               <a class="nav-link text-light active" aria-current="page" href="../../index.html">Início</a>
-              <a class="nav-link text-light" href="#">Produtos</a>
-              <a class="nav-link text-light" href="#">Tutoriais</a>
+              <a class="nav-link text-light" href="../produtos.html">Produtos</a>
+              <a class="nav-link text-light" href="../tutoriais.html">Tutoriais</a>
+              <a href="../galery.html"><span class="material-symbols-outlined">keyboard_arrow_up</span>Voltar</a>
             </div>
           </div>
         </nav>
@@ -46,7 +46,7 @@
   </nav>
 
   <article>
-    <h1>Acionamento de LED por push button</h1>
+    <h1>Divisor de tensão</h1>
   </article>
 
 
@@ -67,47 +67,59 @@
       <tbody>
         <tr>
           <th scope="row">1</th>
-          <td>LED</td>
+          <td>LED RGB</td>
           <td>1</td>
           <td>
-            <img class="imagem_component" src="../../Imagens/Componentes imagens/Símbolos/LED.png"
+            <img class="imagem_component" src="../../Imagens/Componentes imagens/Símbolos/Diodos/LED.png"
               alt="../../Imagens/Misc/img_not_found.png" draggable="false">
           </td>
           <td>
-            <img class="imagem_component" src="../../Imagens/Componentes imagens/Imagem/LED.png" draggable="false"
-              alt="../../Imagens/Misc/img_not_found.png" id="led">
+            <img class="imagem_component" src="../../Imagens/Componentes imagens/Imagem/Diodos/LED aceso.png"
+              draggable="false" alt="../../Imagens/Misc/img_not_found.png" id="led">
           </td>
         </tr>
         <tr>
           <th scope="row">2</th>
-          <td>Resistor</td>
+          <td>Resistor 200R</td>
           <td>1</td>
           <td>
-            <img class="imagem_component" src="../../Imagens/Componentes imagens/Símbolos/resistor.png"
+            <img class="imagem_component" src="../../Imagens/Componentes imagens/Símbolos/Resistores/resistor.png"
               alt="../../Imagens/Misc/img_not_found.png">
           </td>
           <td>
-            <img class="imagem_component" src="../../Imagens/Componentes imagens/Imagem/Resistor.png"
+            <img class="imagem_component" src="../../Imagens/Componentes imagens/Imagem/Resistores/Resistor 200R.png"
               alt="../../Imagens/Misc/img_not_found.png">
           </td>
         </tr>
         <tr>
-          <th scope="row">3</th>
-          <td>Botão</td>
+          <th scope="row">2</th>
+          <td>Resistor 300R</td>
           <td>1</td>
-          <td><img class="imagem_component" src="../../Imagens/Componentes imagens/Símbolos/Push Button.png"
-              alt="../../Imagens/Misc/img_not_found.png"></td>
-          <td><img class="imagem_component" src="../../Imagens/Componentes imagens/Imagem/Botão.png"
+          <td>
+            <img class="imagem_component" src="../../Imagens/Componentes imagens/Símbolos/Resistores/resistor.png"
+              alt="../../Imagens/Misc/img_not_found.png">
+          </td>
+          <td>
+            <img class="imagem_component" src="../../Imagens/Componentes imagens/Imagem/Resistores/Resistor 300R.png"
               alt="../../Imagens/Misc/img_not_found.png">
           </td>
         </tr>
         <tr>
           <th scope="row">4</th>
+          <td>Voltímetro</td>
+          <td>1</td>
+          <td><img class="imagem_component" src="../../Imagens/Componentes imagens/Símbolos/Ferramentas/Voltimetro.png"
+              alt="../../Imagens/Misc/img_not_found.png"></td>
+          <td><img class="imagem_component" src="../../Imagens/Componentes imagens/Imagem/Ferramentas/Multímetro.png"
+              alt="../../Imagens/Misc/img_not_found.png"></td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
           <td>Fonte</td>
           <td>1</td>
-          <td><img class="imagem_component" src="../../Imagens/Componentes imagens/Símbolos/Battery.png"
+          <td><img class="imagem_component" src="../../Imagens/Componentes imagens/Símbolos/Fonte/Battery.png"
               alt="../../Imagens/Misc/img_not_found.png"></td>
-          <td><img class="imagem_component" src="../../Imagens/Componentes imagens/Imagem/Fonte.png"
+          <td><img class="imagem_component" src="../../Imagens/Componentes imagens/Imagem/Fontes/Fonte.png"
               alt="../../Imagens/Misc/img_not_found.png"></td>
         </tr>
       </tbody>
@@ -130,7 +142,7 @@
         <div id="tutorial_led_acio" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
           <div class="accordion-body">
 
-            <h1>Tutorial: Acionamento de LED por push button</h1>
+            <h1>Tutorial: Divisor de Tensão</h1>
 
             <h2>Nesse tutorial eu usarei o Tinkercad para criar o circuito.</h2>
 
@@ -139,10 +151,10 @@
 
             <div class="item">
               <p>#1</p>
-              <p>Aqui estamos no Famigerado Tinkercad.</p>
+              <p>Iniciamos o tutorial de divisor de tensão.</p>
               <picture>
-                <source media="(min-width: 768px)" srcset="Tutoriais/Acionamento_por_LED/PC/Tela1.png" sizes="">
-                <img src="Tutoriais/Acionamento_por_LED/Celular/Tela1.png" alt="" sizes="">
+                <source media="(min-width: 768px)" srcset="Tutoriais/Divisor_de_tensao/PC/Tela1.png" sizes="">
+                <img src="Tutoriais/Divisor_de_tensao/Celular/Tela1.png" alt="" sizes="">
               </picture>
             </div>
 
@@ -152,90 +164,92 @@
 
             <div class="item">
               <p>#2</p>
-              <p>Nesse frame, vamos pegar um Resistor, um LED, e um botão.</p>
+              <p>Pegue um resistor de 300 Ohms e outro de 200 Ohms.</p>
               <picture>
-                <source media="(min-width: 768px)" srcset="Tutoriais/Acionamento_por_LED/PC/Tela2.png" sizes="">
-                <img src="Tutoriais/Acionamento_por_LED/Celular/Tela2.png" alt="" sizes="">
+                <source media="(min-width: 768px)" srcset="Tutoriais/Divisor_de_tensao/PC/Tela2.png" sizes="">
+                <img src="Tutoriais/Divisor_de_tensao/Celular/Tela2.png" alt="" sizes="">
               </picture>
             </div>
 
 
             <div class="item">
               <p>#3</p>
-              <p>Vamos colocar um resistor de 270 Ohms, assim a corrente aproximada fica aproxidamente 11mA para uma
-                tensão de 5V da fonte.</p>
+              <p>Agora, pegue uma protoboard para posicionar os componentes.</p>
               <picture>
-                <source media="(min-width: 768px)" srcset="Tutoriais/Acionamento_por_LED/PC/Tela3.png" sizes="">
-                <img src="Tutoriais/Acionamento_por_LED/Celular/Tela3.png" alt="" sizes="">
+                <source media="(min-width: 768px)" srcset="Tutoriais/Divisor_de_tensao/PC/Tela3.png" sizes="">
+                <img src="Tutoriais/Divisor_de_tensao/Celular/Tela3.png" alt="" sizes="">
               </picture>
             </div>
 
             <div class="item">
               <p>#4</p>
-              <p>E claro, vamos pegar também a fonte de alimentação já configurada em 5V, mas não precisamos fazer nada!
+              <p>Posicione os componentes na protoboard conforme o esquema. Após isso, pegue uma fonte de 5V e um LED,
+                pode ser de qualquer cor</p>
               </p>
               <picture>
-                <source media="(min-width: 768px)" srcset="Tutoriais/Acionamento_por_LED/PC/Tela4.png" sizes="">
-                <img src="Tutoriais/Acionamento_por_LED/Celular/Tela4.png" alt="" sizes="">
+                <source media="(min-width: 768px)" srcset="Tutoriais/Divisor_de_tensao/PC/Tela4.png" sizes="">
+                <img src="Tutoriais/Divisor_de_tensao/Celular/Tela4.png" alt="" sizes="">
               </picture>
             </div>
 
 
             <div class="item">
               <p>#5</p>
-              <p>Organizando o circuito, temos que colocar o resistor em série no ânodo do LED. No caso do Tinkercad, a
-                "Perninha" mais torta do LED, é o positivo.</p>
+              <p>E por último pegue um multímetro e coloque na medida de tensão.</p>
               <picture>
-                <source media="(min-width: 768px)" srcset="Tutoriais/Acionamento_por_LED/PC/Tela5.png" sizes="">
-                <img src="Tutoriais/Acionamento_por_LED/Celular/Tela5.png" alt="" sizes="">
+                <source media="(min-width: 768px)" srcset="Tutoriais/Divisor_de_tensao/PC/Tela5.png" sizes="">
+                <img src="Tutoriais/Divisor_de_tensao/Celular/Tela5.png" alt="" sizes="">
               </picture>
             </div>
 
 
             <div class="item">
               <p>#6</p>
-              <p>Conectamos todos os fios, basta clicar em cada terminal e levar até o terminal correspondente.</p>
+              <p>Conecte o positivo no barramento vermelho da protoboard. e o negativo no barramento preto.</p>
               <picture>
-                <source media="(min-width: 768px)" srcset="Tutoriais/Acionamento_por_LED/PC/Tela6.png" sizes="">
-                <img src="Tutoriais/Acionamento_por_LED/Celular/Tela6.png" alt="" sizes="">
+                <source media="(min-width: 768px)" srcset="Tutoriais/Divisor_de_tensao/PC/Tela6.png" sizes="">
+                <img src="Tutoriais/Divisor_de_tensao/Celular/Tela6.png" alt="" sizes="">
               </picture>
             </div>
 
 
             <div class="item">
               <p>#7</p>
-              <p>E agora a melhor parte, simular o circuito que criamos.</p>
+              <p>A ligação a seguir: do barramento vermelho à entrada do resistor 1 (300R) em série com o resistor 2
+                (200R), e faz o retorno para o negativo.</p>
               <picture>
-                <source media="(min-width: 768px)" srcset="Tutoriais/Acionamento_por_LED/PC/Tela7.png" sizes="">
-                <img src="Tutoriais/Acionamento_por_LED/Celular/Tela7.png" alt="" sizes="">
+                <source media="(min-width: 768px)" srcset="Tutoriais/Divisor_de_tensao/PC/Tela7.png" sizes="">
+                <img src="Tutoriais/Divisor_de_tensao/Celular/Tela7.png" alt="" sizes="">
               </picture>
             </div>
 
             <div class="item">
               <p>#8</p>
-              <p>Vejamos... aparece "0.00A" no visor da fonte, porque não acionamos o botão, mas quando pressionarmos o
-                botão...</p>
+              <p>No ânodo do resistor 2 (300R), ligue em série com o ânodo do LED (pino maior), e do Cátodo do LED para
+                o GND (barramento preto).</p>
               <picture>
-                <source media="(min-width: 768px)" srcset="Tutoriais/Acionamento_por_LED/PC/Tela8.png" sizes="">
-                <img src="Tutoriais/Acionamento_por_LED/Celular/Tela8.png" alt="" sizes="">
+                <source media="(min-width: 768px)" srcset="Tutoriais/Divisor_de_tensao/PC/Tela8.png" sizes="">
+                <img src="Tutoriais/Divisor_de_tensao/Celular/Tela8.png" alt="" sizes="">
               </picture>
             </div>
 
             <div class="item">
               <p>#9</p>
-              <p>Podemos ver o caminho que a eletricidade passa, ela segue esta linha e assim liga o LED.</p>
+              <p>Use o multímetro para medir a tensão, positivo do multímetro no positivo do LED (ânodo) e negativo do
+                multímetro no negativo do LED (cátodo).Dá play no circuito</p>
               <picture>
-                <source media="(min-width: 768px)" srcset="Tutoriais/Acionamento_por_LED/PC/Tela9.png" sizes="">
-                <img src="Tutoriais/Acionamento_por_LED/Celular/Tela9.png" alt="" sizes="">
+                <source media="(min-width: 768px)" srcset="Tutoriais/Divisor_de_tensao/PC/Tela9.png" sizes="">
+                <img src="Tutoriais/Divisor_de_tensao/Celular/Tela9.png" alt="" sizes="">
               </picture>
             </div>
 
             <div class="item">
               <p>#10</p>
-              <p>E claro com a corrente do LED em 11.1mA, uma corrente muito saudável para esse LED.</p>
+              <p>Agora podemos ver que a tensão medida no LED é de 1.84V e 10.5mA, uma corrente e tensão saudável para o
+                LED.</p>
               <picture>
-                <source media="(min-width: 768px)" srcset="Tutoriais/Acionamento_por_LED/PC/Tela10.png" sizes="">
-                <img src="Tutoriais/Acionamento_por_LED/Celular/Tela10.png" alt="" sizes="">
+                <source media="(min-width: 768px)" srcset="Tutoriais/Divisor_de_tensao/PC/Tela10.png" sizes="">
+                <img src="Tutoriais/Divisor_de_tensao/Celular/Tela10.png" alt="" sizes="">
               </picture>
             </div>
 

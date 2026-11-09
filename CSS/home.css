@@ -72,6 +72,13 @@ h1{
     font-size: 10pt;
     color: rgb(2, 0, 35);
 }
+
+span{
+    position: relative;
+    color: white;
+}
+
+
 .card-text{
     font-size: 8pt;
 }
